@@ -12,7 +12,7 @@ namespace EncryptedText.Controllers
             var text = ConfigurationManager.AppSettings.Get("TextToEncrypt");
             var encryptedText = Helpers.Encryption.Encrypt(text);
 
-            return View((object) new HomeViewModel() {EncryptedText = encryptedText});
+            return View(new HomeViewModel() { EncryptedText = encryptedText });
         }
 
         public ActionResult About()

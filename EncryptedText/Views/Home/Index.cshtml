@@ -20,11 +20,10 @@
             success: function(result) {
 
                 if (result.success) {
-                    $("#enctext").fadeOut(1000, function() {
-                        $(this).text(result.vm.DecryptedText)
+                    $("#enctext").fadeOut(1000, function () {
+                        $(this).html(result.vm.DecryptedText);
                     }).fadeIn(2500);
                 } else {
-                    debugger;
                     $('#ErrorText').text(result.error).show();
                 }
             },

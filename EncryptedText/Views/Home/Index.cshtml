@@ -40,6 +40,12 @@
 
 <div class="row">
     <div class="col-lg-offset-3 col-lg-6">
+      @Html.Partial("Video")
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-offset-3 col-lg-6">
         <div class="col-lg-12" style="word-wrap: break-word" id="enctext">@Model.EncryptedText</div>
         <div class="col-lg-12" style="word-wrap: break-word" id="dectext" hidden>@Model.DecryptedText</div>
     </div>
